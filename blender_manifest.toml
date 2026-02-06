@@ -1,0 +1,26 @@
+schema_version = "1.0.0"
+
+id = "envirocast"
+version = "1.0.0"
+name = "Envirocast"
+tagline = "Procedural environment scattering tool"
+maintainer = "Group 26 <support@3d.com>"
+type = "add-on"
+
+tags = ["3D View", "Geometry Nodes"]
+
+blender_version_min = "4.2.0"
+
+license = ["SPDX:GPL-3.0-or-later"]
+copyright = ["2026 Group 26"]
+
+# Các thư viện cần
+wheels = [
+  "./wheels/jsonschema-4.6.0-py3-none-any.whl",
+  "./wheels/attrs-24.2.0-py3-none-any.whl",
+  "./wheels/pyrsistent-0.20.0-py3-none-any.whl",
+  "./wheels/t3dn_bip-1.0.9-py3-none-any.whl"
+]
+
+[permissions]
+files = "Import and save scatter presets"
